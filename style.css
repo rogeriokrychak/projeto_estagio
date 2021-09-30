@@ -1,0 +1,104 @@
+
+#img{
+    width: 198px;
+    height: 140px;
+    float: left;
+
+}
+
+/*Style of header*/
+header {
+    background-color: rgba(34, 36, 36, 0.753);
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+a:link{ 
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+}
+
+/*Style for flexboxes*/
+section{
+    display: -webkit-flex;
+    display: flex;
+    
+}
+
+/*style for navigation menu*/
+nav{
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background:  rgba(34, 36, 36, 0.5);
+    max-width: 200px;
+    height: 420px;
+    
+}
+
+/*Style the list inside the menu*/
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    color: black;
+    
+    
+}
+
+
+
+/*Style for article*/
+article{
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    font-size: 15px;
+    color: black;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+#textinitial{
+    font-size: 30px;
+    text-align: left;
+    padding-top: 10px;
+    color: black;
+    list-style-type: none;
+    font-weight: bolder;
+}
+
+#input {
+    font-size: 18px;
+    background-color: rgba(128, 128, 128, 0.589);
+}
+
+/*Style for footer*/
+footer{
+    background-color:  rgba(34, 36, 36, 0.753);
+    padding: 2px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+p {
+    text-align: left;
+}
+
+#rede {
+    width: 38px;
+    height: 28px;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 700px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
